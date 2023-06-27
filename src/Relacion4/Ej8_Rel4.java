@@ -1,6 +1,6 @@
-//Dado un array de enteros de tamaño N, decir si es capicúa o no, es decir, si por 
-//ejemplo el array es: 5 2 1 2 5, el resultado debe ser “verdad”(se debe tener en cuenta 
-//que el tamaño el array puede ser par o impar)
+// Dado un array de enteros de tamaño N, decir si es capicúa o no, es decir, si por   
+// ejemplo el array es: 5 2 1 2 5, el resultado debe ser “verdad”(se debe tener en cuenta 
+// que el tamaño el array puede ser par o impar)
 
 package Relacion4;
 
@@ -22,8 +22,11 @@ public class Ej8_Rel4 {
 		System.out.println("Introduce el vector: ");
 		FuncionesVectores.pedirVector(vector);
 		
-		System.out.println("Introduce el vector: ");
-		FuncionesVectores.EsCapicua();
+		System.out.println("Tu vector es : ");
+		FuncionesVectores.mostrarVector(vector);
+
+				System.out.printf("No es capicua");
+
 	}
 
 }

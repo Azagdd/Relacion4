@@ -132,6 +132,7 @@ public class FuncionesVectores {
 		for (int i = 1; i < vector1.length && paralelo==true; i++) {
 			if (vector1[i]/(double)vector2[i] != factor) {
 				paralelo = false;
+				
 		}
 		
 	}
@@ -140,11 +141,12 @@ public class FuncionesVectores {
 	}
 
 	public static boolean EsCapicua(int[] vector) {
-		boolean paralelo = true;
-		leeralante =
-		leeratras =
-		for (int i = 0; i < vector.length; i++) {
-			
+		boolean capicua = true;
+		for (int i = 0, j = vector.length-1; i<j; i++, j--) {
+			if (vector[i] != vector[j])
+				capicua = false;
 		}
-		}
+		return capicua;
+		
 	}
+}
